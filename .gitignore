@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+
+config.py
+*.backup
+*.working
+*.before-parser-fix
+
+launchagent*.log
+
+.DS_Store

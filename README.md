@@ -497,7 +497,7 @@ Never publish:
 
 Roblox Peek is open-source software licensed under the **MIT License**.
 
-See [`LICENSE`](LICENSE) for details.
+See [`LICENSE`](https://github.com/strawbkvma/roblox-peek/blob/main/LICENSE) for details.
 
 ---
 

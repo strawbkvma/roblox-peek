@@ -313,10 +313,16 @@ def get_thumbnail(universe_id):
 def connect_discord():
     global rpc
 
-    rpc = Presence(DISCORD_CLIENT_ID)
-    rpc.connect()
-
-    print("Discord Rich Presence connected!")
+    while True:
+        try:
+            rpc = Presence(DISCORD_CLIENT_ID)
+            rpc.connect()
+            print("Discord Rich Presence connected!")
+            return
+        except Exception as error:
+            print(f"Discord belum tersedia: {error}")
+            print("Retrying in 5 seconds...")
+            time.sleep(5)
 
 
 def show_browsing():
